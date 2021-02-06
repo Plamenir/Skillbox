@@ -32,7 +32,6 @@ int autoAction(std::stringstream &buffer, int tumbler, int time) {
     CONDITIONER = 0b00100000
   };
   buffer >> tempExt >> tempInt >> moving >> lightInt;
-  std::cout << tempExt << " " << tempInt << " " << moving << " " << lightInt;
 
   if (lightInt == "on") {
     if (!(tumbler & INTERNAL_LIGHT)) {
