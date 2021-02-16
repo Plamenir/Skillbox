@@ -21,6 +21,7 @@ int main() {
     }
     summ += payment;
   }
+  bill.close();
   std::cout << "Общая сумма выплат " << summ << "\n";
   std::cout << "Максимальная выплата: " << maxName << " " << max;
   std::cout << "\n";

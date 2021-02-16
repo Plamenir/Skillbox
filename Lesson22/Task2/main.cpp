@@ -15,4 +15,5 @@ int main() {
     txt.read(buff, sizeof(char));
     std::cout << *buff;
   }
+  txt.close();
 }
