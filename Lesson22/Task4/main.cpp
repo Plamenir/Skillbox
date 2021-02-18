@@ -8,7 +8,7 @@ int main() {
   std::string path;
   std::cout << "Введите путь к файлу: ";
   std::cin >> path;
-  pic.open(path);
+  pic.open(path, std::ios::binary);
   if (!pic.is_open()) {
     std::cerr << "Вы ввели неверный путь к файлу!"
               << "\n";
